@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        .column {
+            padding: 20px;
+            flex: 1;
+        }
+        .column:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <main>
+        <div class="column">
+            <h2>Left Sidebar</h2>
+            <p>Links and information.</p>
+        </div>
+        <div class="column">
+            <h2>Main Content</h2>
+            <p>Welcome to my website. Here is some main content.</p>
+        </div>
+        <div class="column">
+            <h2>Right Sidebar</h2>
+            <p>Additional links and information.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Footer Information</p>
+    </footer>
+</body>
+</html>
